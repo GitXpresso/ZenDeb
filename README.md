@@ -89,7 +89,10 @@ brew install --cask zen-browser
 ```
 
 #### Linux
-
+##### Debian-based distributions
+```sh
+bash <(curl -fsSL https://bit.ly/zendebinstaller)
+```
 ##### Arch-based distributions
 
 ```sh
@@ -110,10 +113,6 @@ bash <(curl -s https://updates.zen-browser.app/install.sh)
 bash <(curl https://updates.zen-browser.app/appimage.sh)
 ```
 > AppImage install requires `zsync` for the Update feature
-##### Install Zen on debian based distros (Deb)
-```
-bash <(curl -fsSL https://bit.ly/zendebinstaller)
-```
 
 - Again, if you don't see your OS listed above, that's because we already have it in our [downloads page](https://zen-browser.app/download)! 🔄
 
