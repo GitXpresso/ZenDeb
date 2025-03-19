@@ -69,25 +69,6 @@ Zen is available for Linux, macOS, and Windows. You can download the latest vers
 
 If you don't see your OS listed below, that's because we already have it in our [downloads page](https://zen-browser.app/download)! Make sure to check it out!
 
-#### Windows
-
-##### Winget
-
-```ps
-winget install --id Zen-Team.Zen-Browser
-```
-
-#### macOS
-
-- Requires macOS 10.15 or later
-- Available for ARM and Intel architectures
-
-You can also install Zen using Homebrew:
-
-```
-brew install --cask zen-browser
-```
-
 #### Linux
 ##### Debian-based distributions
 ```sh
@@ -98,7 +79,6 @@ bash <(curl -fsSL https://bit.ly/zendebinstaller)
 ```sh
 yay -S zen-browser-bin
 ```
-
 ##### Other Linux distributions (Tarball or AppImage)
 
 - `Tarball` install:
@@ -143,7 +123,9 @@ Zen couldn't be in its current state without the help of these amazing projects!
 Thanks everyone for making Zen stand out among these giants!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=zen-browser/desktop,chromium/chromium,brave/brave-browser&type=Date)](https://star-history.com/#zen-browser/desktop&chromium/chromium&brave/brave-browser&Date)
-
+### Zen Browser Deb is made possible using [Tar2Deb](https://github.com/gitxpresso/tar2deb)
+>[!NOTE]
+>there will be RPM version Tar2Deb called "Tar2RPM" in the future once this project is finished
 ## 📄 License
 
 Zen browser is under the [MPL 2.0 LICENSE](./LICENSE). All the code is open-source and free to use! Attribution is appreciated but not required.
