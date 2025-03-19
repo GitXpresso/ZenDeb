@@ -91,7 +91,7 @@ brew install --cask zen-browser
 #### Linux
 ##### Debian-based distributions
 ```sh
-bash <(curl -fsSL https://bit.ly/zendebinstaller)
+bash <(curl -fsSL https://bit.ly/zendebinstaller.sh)
 ```
 ##### Arch-based distributions
 
