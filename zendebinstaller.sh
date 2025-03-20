@@ -1,6 +1,6 @@
 echo "avaliable tag versions: "
 echo "1. 0.0.0-a.2 (alpha)"
-echo "2.0.0-a.1 (alpha)"
+echo "2. 1.0.0-a.1 (alpha)"
 echo "3. 1.0.0-a.2 (alpha)"
 echo "4. 1.0.0-a.3 (alpha)"
 read -p "enter a number containing a tag version (ex: 1 2 3 etc.): " tag
