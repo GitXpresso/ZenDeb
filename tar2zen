@@ -171,6 +171,8 @@ while true; do
     fi
 done
 DEB_DIR="zen-$Version"
+mkdir -p ~/$DEB_DIR
+mkdir -p ~/$DEB_DIR/DEBIAN
 clear
 cat << EOF >~/$DEB_DIR/DEBIAN/control
 Package: zen
@@ -179,7 +181,8 @@ Section: base
 Priority: optional
 Architecture: all
 Maintainer: William Gwin
-Description: $Description
+Description: Zen Browser is a privacy-focused, open-source web browser built on Mozilla Firefox, offering users a secure and customizable browsing experience. It emphasizes privacy by blocking trackers, ads, and ensuring your data isn't collected. 
+  Zen Browser is designed for users who prioritize privacy and want a browser that respects their online privacy.
 
 EOF
 mkdir -p $HOME/$DEB_DIR/usr/bin/
