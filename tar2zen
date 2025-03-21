@@ -170,7 +170,7 @@ while true; do
         echo "Invalid input. Please enter a valid version number (e.g., 1.0, 1.0.1, etc.)."
     fi
 done
-DEB_DIR="zen-$VERSION"
+DEB_DIR="zen-$Version"
 clear
 cat << EOF >~/$DEB_DIR/DEBIAN/control
 Package: zen
