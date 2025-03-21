@@ -192,7 +192,6 @@ mkdir -p $HOME/$DEB_DIR/usr/bin/
 echo "Searching for executable files in $HOME/$TAR_DIR..."
 
 # Use find to get all files in TAR_DIR, check if they are executable, and then link them
-find "$HOME/$TAR_DIR" -type f -exec file {} + | grep -i 'executable' | grep -vi 'binary' | cut -d: -f1 | grep -v -E 'glxtest|updater|vaapitest|pingsender|plugin-container|run-mozilla.sh|blender-softwaregl|blender-system-info.sh|blender-thumbnailer|*.py|*.rs' | while read -r file; do busybox ln -s "$file" "$HOME/$DEB_DIR/usr/bin/"; done
 # Specify the word to search for in the second directory
 
 # Check if the first directory exists
@@ -248,6 +247,7 @@ export MOST_BINARIES_SUBDIR
 
 # Output the result
 cp ${MOST_BINARIES_SUBDIR}*.so $HOME/$DEB_DIR/usr/lib
+find "$HOME/$DEB_DIR/usr/lib" -type f -exec file {} + | grep -i 'executable' | grep -vi 'binary' | cut -d: -f1 | grep -v -E 'glxtest|updater|vaapitest|pingsender|plugin-container|run-mozilla.sh|blender-softwaregl|blender-system-info.sh|blender-thumbnailer|*.py|*.rs' | while read -r file; do busybox ln -s "$file" "$HOME/$DEB_DIR/usr/bin/"; done
 search_dir="$HOME/$TAR_DIR/"
 file_types="*.jpg *.jpeg *.png *.bmp *.svg"
 
